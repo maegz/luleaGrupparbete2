@@ -52,13 +52,14 @@ body {
 
 #main-nav {
   width: 40%;
-  height: 60px;
+  height: 40px;
   float: left;
   clear: both;
   padding-bottom: 20px;
   margin-left: 30%;
-  text-align: center;
-  font-family: Fredoka One, cursive;
+  align-items: center;
+  justify-content: center;
+  font:1em "Open Sans, sans-serif";
   
 }
 
@@ -66,6 +67,7 @@ body {
   margin: 0px;
   padding: 0px;
   float: left;
+  margin: auto;
   list-style-type:none;
 }
 
@@ -75,15 +77,15 @@ body {
 
 .main-nav-item {
   display: inline-block;
-  padding: 10px 15px;
-  height: 40px;
-  line-height: 40px;
+  padding: 10px 10px;
+  height: 30px;
+  line-height: 30px;
   text-decoration:none;
   color:#000;
 }
 
 .main-nav-item:hover {
-  background: rgba(0, 0, 255, 0.8);
+  background: rgba(0, 0, 255, 0.2);
 }
 
 
@@ -93,7 +95,7 @@ body {
 
 #sommarText,
 #figure2 {
-    width: 940px;
+    width: 740px;
     float: right;
     margin-right: 40px;
     margin-bottom: 0;
@@ -121,7 +123,7 @@ body {
     background: rgba(0, 100, 0, 0.3);
     height: 20px;
     margin-top: 0;
-    width: 1200px;
+    width: 1000px;
 }
 #figure3 {
     background: rgba(0, 100, 0, 0.3);
@@ -144,7 +146,7 @@ body {
 }
 
 #vinterText {
-    width: 940px;
+    width: 740px;
     float: left;
     margin-left: 40px;
     margin-bottom: 0;
@@ -152,8 +154,6 @@ body {
 
 #footer {
     font:1em "Open Sans, sans-serif";
-    border-top: 2px dashed rgba(0, 100, 0, 0.3);
-    border-width: 2px;
     /*clear: both;*/
     width: 40%;
     margin-left: 30%;
