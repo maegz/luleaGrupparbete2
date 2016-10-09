@@ -57,8 +57,7 @@ body {
   clear: both;
   padding-bottom: 20px;
   margin-left: 30%;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   font:1em "Open Sans, sans-serif";
   
 }
@@ -66,13 +65,14 @@ body {
 #main-nav > Ul {
   margin: 0px;
   padding: 0px;
-  float: left;
-  margin: auto;
+  display: inline-block;
+  text-align: center;
   list-style-type:none;
 }
 
 #main-nav > Ul > li {
-  float: left;
+  display: inline-block;
+  position: relative;
 }
 
 .main-nav-item {
@@ -85,8 +85,54 @@ body {
 }
 
 .main-nav-item:hover {
-  background: rgba(0, 0, 255, 0.2);
+  background: rgba(192, 192, 192, 1);
 }
+
+.main-nav-item:hover ~ .nav-content {
+  max-height:400px;
+  -webkit-transition:max-height 400ms ease-in;
+  -moz-transition:max-height 400ms ease-in;
+  transition:max-height 400ms ease-in;
+}
+
+.nav-content:hover {
+  max-height:400px;
+}
+
+.nav-content {
+  position:absolute;
+  top:50px;
+  overflow: hidden;
+  max-height:0;
+}
+
+.nav-content a {
+  text-decoration:none;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
+  white-space: nowrap;
+  }
+
+.nav-content a:hover {
+  background: rgba(192, 192, 192, 1);
+}
+
+.nav-sub {
+  padding:0px;
+}
+
+.nav-sub ul {
+  padding:0;
+  margin:0;
+  list-style-type:none;
+  text-align: left;
+}
+
+.nav-sub ul li a {
+  display:inline-block;
+  padding:10px;
+}
+
 
 
 #content {
