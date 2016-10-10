@@ -4,12 +4,12 @@
         <title>Test 1.0</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="normalize.css" />
-        <link id="pagestyle" href="style2.css" rel="stylesheet" type="text/css" />
-    
-    
+        <link id="pagestyle" href="style.css" rel="stylesheet" type="text/css" />
+
+
     <script>
     function swapStyleSheet(sheet) {
-      document.getElementById("pagestyle").setAttribute("href", sheet);  
+      document.getElementById("pagestyle").setAttribute("href", sheet);
     }
 
     function initate() {
@@ -25,47 +25,46 @@
     }
 
     window.onload = initate;
-    
-    
+
+
     </script>
-    
+
     </head>
     <body>
         <div id="wrapper">
+            <nav id="main-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="main-nav-item">Välj CSS</a>
+                        <div class="nav-content">
+                            <div class="nav-sub">
+                                <ul>
+                                    <li><a id="stylesheet1" href="#">Style 0 (ingen meny)</a></li>
+                                    <li><a id="stylesheet2" href="#">Style 1</a></li>
+                                    <li><a id="stylesheet3" href="#">Style 2</a></li>
+                                    <li><a id="nostyle" href="#">No CSS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#sommarText" class="main-nav-item">Sommar</a>
+                    </li>
+                    <li>
+                        <a href="#vinterText" class="main-nav-item">Vinter</a>
+                    </li>
+                    <li>
+                        <a href="http://www.lulea.nu/en/besoekare/turistinformation/" class="main-nav-item" target="_blank">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
             <div id="header">
                 <img id="logo"src="logo.png" alt="logo"/>
                 <div id="title"><h1>Luleå</h1></div>
                 <div id="slogan"><b>vad jag längtar dit!</b></div>
             </div>
-            <nav id="main-nav">
-              <ul>
-                <li>
-                  <a href="#" class="main-nav-item">Välj CSS</a>
-                    <div class="nav-content">
-                      <div class="nav-sub">
-                        <ul>
-                        <li><a id="stylesheet1" href="#">Style 0 (ingen meny)</a>  </li>
-                        <li><a id="stylesheet2" href="#">Style 1</a>  </li>
-                        <li><a id="stylesheet3" href="#">Style 2</a>  </li>
-                        <li><a id="nostyle" href="#">No CSS</a>  </li>
-                        </ul>
-                      </div>
-                    </div>
-                </li>
-                <li>
-                  <a href="#sommar" class="main-nav-item">Sommar</a>
-                </li>
-                <li>
-                  <a href="#vinter" class="main-nav-item">Vinter</a>
-                </li>
-                <li>
-                  <a href="http://www.lulea.nu/en/besoekare/turistinformation/" class="main-nav-item" target="_blank">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
-            
             <div id="content">
-                <p id="sommarText"><a name="sommar">Sportoteket och biblioteket på plats. Genom att Sportoteket finns på
+                <p id="sommarText">Sportoteket och biblioteket på plats. Genom att Sportoteket finns på
                 plats med sin verksamhet och lånar ut idrottsutrustning som Luleåbor
                 har skänkt, kan du prova på platsens alla aktiviteter utan att behöva
                 ta med egna prylar. Du kan låna till exempel basketboll, fotboll,
@@ -94,7 +93,7 @@
                     <figcaption>Hundspannsåkning!<br>Från centrum till äventyr i skärgården!</figcaption>
                     <img id="huskytransport" src="huskytransport.jpg" alt="Huskytransport">
                 </figure>
-                <p id="vinterText"><a name="vinter">Åk hundspann från Luleås centrum rakt ut i ett spännande skärgårdsäventyr.
+                <p id="vinterText">Åk hundspann från Luleås centrum rakt ut i ett spännande skärgårdsäventyr.
                 Eller följ med på skotersafari i det arktiska snölandskapet.
                 Eller varför inte vinterbada efter ett ångande hett bastubad.
                 Eller ta bilen ut på milslånga isvägar och ät middag i en lappkåta mitt ute på isen.
@@ -115,7 +114,7 @@
                 Klättra upp och njut av utsikten
                 och det arktiska klimatet! Har du tur kanske du ser sälar.</p>
             </div>
-            <div id="footer"><p>Av Maximilan Sundberg &amp; Håkan Arnoldson</p></div>
         </div>
+        <div id="footer"><p>Av Maximilan Sundberg &amp; Håkan Arnoldson</p></div>
     </body>
 </html>
