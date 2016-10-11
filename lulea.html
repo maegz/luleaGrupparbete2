@@ -15,13 +15,11 @@
     function initate() {
         var style1 = document.getElementById("stylesheet1");
         var style2 = document.getElementById("stylesheet2");
-        var style3 = document.getElementById("stylesheet3");
         var style4 = document.getElementById("nostyle");
 
 
         style1.onclick = function () { swapStyleSheet("style.css") };
         style2.onclick = function () { swapStyleSheet("style2.css"); };
-        style3.onclick = function () { swapStyleSheet("hakantest1.css"); };
         style4.onclick = function () { swapStyleSheet(""); };
     }
 
@@ -44,10 +42,9 @@
                         <div class="nav-content">
                             <div class="nav-sub">
                                 <ul>
-                                    <li><a id="stylesheet1" href="#">Style 0 (ingen meny)</a></li>
-                                    <li><a id="stylesheet2" href="#">Style 1</a></li>
-                                    <li><a id="stylesheet3" href="#">Style 2</a></li>
-                                    <li><a id="nostyle" href="#">No CSS</a></li>
+                                    <li><a id="stylesheet1" href="#">Normal</a></li>
+                                    <li><a id="stylesheet2" href="#">Enkel</a></li>
+                                    <li><a id="nostyle" href="#">Ingen</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -63,56 +60,60 @@
 
                 <button type="button" id="visaSommar">Sommar i Luleå</button>
                 <button type="button" id="visaVinter">Vinter i Luleå</button>
-                <div id="sommarText">Sportoteket och biblioteket på plats. Genom att Sportoteket finns på
-                    plats med sin verksamhet och lånar ut idrottsutrustning som Luleåbor
-                    har skänkt, kan du prova på platsens alla aktiviteter utan att behöva
-                    ta med egna prylar. Du kan låna till exempel basketboll, fotboll,
-                    hopprep, pingisracket med boll, hink och spade, volleyboll med mera.
+                <div id="sommarText">
+                    <p>Sportoteket och biblioteket på plats. Genom att Sportoteket finns på
+                        plats med sin verksamhet och lånar ut idrottsutrustning som Luleåbor
+                        har skänkt, kan du prova på platsens alla aktiviteter utan att behöva
+                        ta med egna prylar. Du kan låna till exempel basketboll, fotboll,
+                        hopprep, pingisracket med boll, hink och spade, volleyboll med mera.
 
-                    <br>Varje tisdag eftermiddag arrangeras sportaktiviteter i
-                    samarbete med det lokala föreningslivet.
+                        <br>Varje tisdag eftermiddag arrangeras sportaktiviteter i
+                        samarbete med det lokala föreningslivet.
 
-                    <br>Biblioteket lånar ut böcker och sällskapsspel och erbjuder sagostund varje söndag.
+                        <br>Biblioteket lånar ut böcker och sällskapsspel och erbjuder sagostund varje söndag.
 
-                    <br><br>På hamnplanen kan du spela "Sommar ♥ Luleå", ett sällskapsspel i storformat.
-                    Hyllad fotoutställning visas utomhus
+                        <br><br>På hamnplanen kan du spela "Sommar ♥ Luleå", ett sällskapsspel i storformat.
+                        Hyllad fotoutställning visas utomhus
 
-                    <br>Fotografiskas hyllade och uppmärksammade "Ikoner – en utställning om att få finnas"
-                    ställs ut på Södra strand i sommar. Modellerna, som alla har Downs syndrom,
-                    porträtterar olika historiska och mytologiska ikoner genom tiderna.
+                        <br>Fotografiskas hyllade och uppmärksammade "Ikoner – en utställning om att få finnas"
+                        ställs ut på Södra strand i sommar. Modellerna, som alla har Downs syndrom,
+                        porträtterar olika historiska och mytologiska ikoner genom tiderna.
 
-                    <br>Utställningen är ett samarbete mellan Glada Hudik-teatern och Fotografiska i Stockholm.
-                    Den visas utomhus på Södra strand mellan den 20 juni och 21 augusti, med en paus 13-16 juli.
+                        <br>Utställningen är ett samarbete mellan Glada Hudik-teatern och Fotografiska i Stockholm.
+                        Den visas utomhus på Södra strand mellan den 20 juni och 21 augusti, med en paus 13-16 juli.
+                    </p>
                     <figure id="figure1">
                         <img id="strandplan" src="sodra_strand.jpg" alt="Södra Strand">
                         <figcaption>Södra strand.<br>En exotisk oas mitt i centrum!</figcaption>
                     </figure>
                 </div>
-                <div id="vinterText">Åk hundspann från Luleås centrum rakt ut i ett spännande skärgårdsäventyr.
-                    Eller följ med på skotersafari i det arktiska snölandskapet.
-                    Eller varför inte vinterbada efter ett ångande hett bastubad.
-                    Eller ta bilen ut på milslånga isvägar och ät middag i en lappkåta mitt ute på isen.
+                <div id="vinterText">
+                    <p>Åk hundspann från Luleås centrum rakt ut i ett spännande skärgårdsäventyr.
+                        Eller följ med på skotersafari i det arktiska snölandskapet.
+                        Eller varför inte vinterbada efter ett ångande hett bastubad.
+                        Eller ta bilen ut på milslånga isvägar och ät middag i en lappkåta mitt ute på isen.
 
-                    <br>Tidsperiod: januari till april.
+                        <br>Tidsperiod: januari till april.
 
-                    <br>Dinner on Ice– I Swedish Lapland gör vi saker på vårt eget sätt.
-                    Vi serverar en trerätters middag med vin i kristallglas och ljus i silverkandelabrar
-                    i en lappkåta mitt ute på den frusna Bottenviken.
-                    Där kyler vi champagnen i ett hål i isen och ofta ackompanjeras middagen
-                    av ett sprakande norrsken.
-                    Och det bästa av allt – du är inbjuden att delta!
+                        <br>Dinner on Ice– I Swedish Lapland gör vi saker på vårt eget sätt.
+                        Vi serverar en trerätters middag med vin i kristallglas och ljus i silverkandelabrar
+                        i en lappkåta mitt ute på den frusna Bottenviken.
+                        Där kyler vi champagnen i ett hål i isen och ofta ackompanjeras middagen
+                        av ett sprakande norrsken.
+                        Och det bästa av allt – du är inbjuden att delta!
 
-                    <br>Pack-Is safari – Under vintern pressas stora block av snö och is samman av vinden
-                    och det hårda klimatet i den yttre skärgården.
-                    Professionella guider tar dig med skoter, hundspann eller bil över isen
-                    och ut till de så kallade pack-is vallarna som kan bli upp mot 15 meter höga.
-                    Klättra upp och njut av utsikten
-                    och det arktiska klimatet! Har du tur kanske du ser sälar.
-                <figure id="figure2" class="hide">
-                    <img id="huskytransport" src="huskytransport.jpg" alt="Huskytransport">
-                    <figcaption>Hundspannsåkning!<br>Från centrum till äventyr i skärgården!</figcaption>
-                </figure>
-            </div>
+                        <br>Pack-Is safari – Under vintern pressas stora block av snö och is samman av vinden
+                        och det hårda klimatet i den yttre skärgården.
+                        Professionella guider tar dig med skoter, hundspann eller bil över isen
+                        och ut till de så kallade pack-is vallarna som kan bli upp mot 15 meter höga.
+                        Klättra upp och njut av utsikten
+                        och det arktiska klimatet! Har du tur kanske du ser sälar.
+                    </p>
+                    <figure id="figure2" class="hide">
+                        <img id="huskytransport" src="huskytransport.jpg" alt="Huskytransport">
+                        <figcaption>Hundspannsåkning!<br>Från centrum till äventyr i skärgården!</figcaption>
+                    </figure>
+                </div>
             </div>
             <div id="footer"><p>Av Maximilan Sundberg &amp; Håkan Arnoldson</p></div>
         </div>

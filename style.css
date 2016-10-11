@@ -12,6 +12,7 @@ html {
 body {
     background: rgba(41, 186, 214, 0.5);
     width: 1280px;
+    min-height: 500px;
     margin: 0 auto;
     margin-bottom: 100px;
     padding: 25px;
@@ -19,21 +20,8 @@ body {
 
 
 #main-nav {
-  	width: 40%;
   	height: 40px;
-  	clear: both;
-  	padding-bottom: 20px;
-  	float: left;
-  	text-align: center;
-}
-
-#main-nav > Ul {
-  	margin-top: -5em;
-    margin-left: 12em;
-  	padding: 0px;
-  	display: inline-block;
-  	text-align: center;
-  	list-style-type:none;
+  	float: right;
 }
 
 #main-nav > Ul > li {
@@ -139,18 +127,44 @@ body {
     margin-bottom:100px;
 }
 
+#visaSommar {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
 
-#sommarText,
-#vinterText {
-    display: none;
-    width: 940px;
+#visaVinter {
     float: right;
-    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-right: 10%;
 }
 
 #visaSommar:focus ~ #sommarText,
 #visaVinter:focus ~ #vinterText {
     display: block;
+    -webkit-transition:display 400ms ease-in;
+  	-moz-transition:display 400ms ease-in;
+  	transition:display 400ms ease-in;
+}
+
+#sommarText > p,
+#vinterText > p {
+    float: right;
+    width: 800px;
+}
+
+#sommarText,
+#vinterText {
+    display: none;
+    width: 1200px;
+    float: right;
+    margin-right: 40px;
+}
+
+#visaSommar {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 10%;
 }
 
 #figure1,
