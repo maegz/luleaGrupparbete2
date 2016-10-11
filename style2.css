@@ -14,6 +14,7 @@ body {
     font-family: "Open Sans";
 }
 
+
 #wrapper {
   background:#fff;
   width: 1020px;
@@ -21,6 +22,14 @@ body {
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
+@media only screen and (max-device-width: 480px) {
+  #wrapper {
+    min-height: 2500px;
+}
+
+}
+
 
 #main-nav {
   	height: 40px;
