@@ -52,12 +52,19 @@
                 </ul>
             </nav>
             <div id="header">
-                <img id="logo"src="logo.png" alt="logo"/>
+                <img id="logo" style="height: 100px; width: 100px;" src="logo.png" alt="logo"/>
                 <div id="title"><h1>Luleå</h1></div>
                 <div id="slogan"><b>vad jag längtar dit!</b></div>
             </div>
             <div id="content">
+                <!--Ett försök att skapa en visa/dölj-funktion med knappar.
 
+                    Utan JavaScript så blir det dock lite knepigt, då det endast funkar
+                    att köra med :focus-funktionen i CSS.
+
+                    Resultatet är att innehållet försvinner så fort knappen hamnar
+                    ur fokus = när man trycker någon annan stans på sidan.
+                -->
                 <button type="button" id="visaSommar">Sommar i Luleå</button>
                 <button type="button" id="visaVinter">Vinter i Luleå</button>
                 <div id="sommarText">
@@ -83,7 +90,7 @@
                         Den visas utomhus på Södra strand mellan den 20 juni och 21 augusti, med en paus 13-16 juli.
                     </p>
                     <figure id="figure1">
-                        <img id="strandplan" src="sodra_strand.jpg" alt="Södra Strand">
+                        <img id="strandplan" style="height: auto; width: 250px;" src="sodra_strand.jpg" alt="Södra Strand">
                         <figcaption>Södra strand.<br>En exotisk oas mitt i centrum!</figcaption>
                     </figure>
                 </div>
@@ -110,7 +117,7 @@
                         och det arktiska klimatet! Har du tur kanske du ser sälar.
                     </p>
                     <figure id="figure2" class="hide">
-                        <img id="huskytransport" src="huskytransport.jpg" alt="Huskytransport">
+                        <img id="huskytransport" style="height: auto; width: 250px;" src="huskytransport.jpg" alt="Huskytransport">
                         <figcaption>Hundspannsåkning!<br>Från centrum till äventyr i skärgården!</figcaption>
                     </figure>
                 </div>
