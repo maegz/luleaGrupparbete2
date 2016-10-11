@@ -1,11 +1,12 @@
-Inlämningsuppgift 1
+InlÃ¤mningsuppgift 1 
 HTML, CSS, Javascript & Webbstandarder
 
-Författare:
+FÃ¶rfattare:
 Maximilan Sundberg
-Håkan Arnoldson
+HÃ¥kan Arnoldson
 
 
 Kommentarer:
-Sommar/Vinter bytet skulle nog varit bättre med javascript så att effekten stannar bättre än med :focus
-eftersom den här inlämningen var för CSS så ville vi dock ändå visa hur man kunde göra det med bara CSS.
+Sommar/Vinter bytet skulle nog varit bÃ¤ttre med javascript sÃ¥ att effekten stannar bÃ¤ttre Ã¤n med :focus
+eftersom den hÃ¤r inlÃ¤mningen var fÃ¶r CSS sÃ¥ ville vi dock Ã¤ndÃ¥ visa hur man kunde gÃ¶ra det med bara CSS.
+
