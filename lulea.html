@@ -25,38 +25,6 @@
         style4.onclick = function () { swapStyleSheet(""); };
     }
 
-    function visaSommar() {
-        var text = document.getElementById("sommarText");
-        var bild = document.getElementById("figure1");
-        var text2 = document.getElementById("vinterText");
-        var bild2 = document.getElementById("figure2");
-
-        if (text.classList != "hide") {
-            text.classList = "hide";
-            bild.classList = "hide";
-        } else {
-            text.classList = "";
-            bild.classList = "";
-            text2.classList = "hide";
-            bild2.classList = "hide";
-        }
-    };
-    function visaVinter() {
-        var text = document.getElementById("vinterText");
-        var bild = document.getElementById("figure2");
-        var text2 = document.getElementById("sommarText");
-        var bild2 = document.getElementById("figure1");
-
-        if (text.classList != "hide") {
-            text.classList = "hide";
-            bild.classList = "hide";
-        } else {
-            text.classList = "";
-            bild.classList = "";
-            text2.classList = "hide";
-            bild2.classList = "hide";
-        }
-    };
 
     window.onload = initate;
 
@@ -84,12 +52,6 @@
                             </div>
                         </div>
                     </li>
-                    <!-- <li>
-                        <a href="#sommarText" class="main-nav-item">Sommar</a>
-                    </li>
-                    <li>
-                        <a href="#vinterText" class="main-nav-item">Vinter</a>
-                    </li> -->
                 </ul>
             </nav>
             <div id="header">
@@ -98,8 +60,10 @@
                 <div id="slogan"><b>vad jag längtar dit!</b></div>
             </div>
             <div id="content">
-                <button type="button" onclick="visaSommar()">Sommar i Luleå</button>
-                <p id="sommarText" class="hide">Sportoteket och biblioteket på plats. Genom att Sportoteket finns på
+
+                <button type="button" id="visaSommar">Sommar i Luleå</button>
+                <button type="button" id="visaVinter">Vinter i Luleå</button>
+                <div id="sommarText">Sportoteket och biblioteket på plats. Genom att Sportoteket finns på
                     plats med sin verksamhet och lånar ut idrottsutrustning som Luleåbor
                     har skänkt, kan du prova på platsens alla aktiviteter utan att behöva
                     ta med egna prylar. Du kan låna till exempel basketboll, fotboll,
@@ -119,17 +83,12 @@
 
                     <br>Utställningen är ett samarbete mellan Glada Hudik-teatern och Fotografiska i Stockholm.
                     Den visas utomhus på Södra strand mellan den 20 juni och 21 augusti, med en paus 13-16 juli.
-                </p>
-                <figure id="figure1" class="hide">
-                    <img id="strandplan" src="sodra_strand.jpg" alt="Södra Strand">
-                    <figcaption>Södra strand.<br>En exotisk oas mitt i centrum!</figcaption>
-                </figure>
-                <button type="button" onclick="visaVinter()">Vinter i Luleå</button>
-                <figure id="figure2" class="hide">
-                    <figcaption>Hundspannsåkning!<br>Från centrum till äventyr i skärgården!</figcaption>
-                    <img id="huskytransport" src="huskytransport.jpg" alt="Huskytransport">
-                </figure>
-                <p id="vinterText" class="hide">Åk hundspann från Luleås centrum rakt ut i ett spännande skärgårdsäventyr.
+                    <figure id="figure1">
+                        <img id="strandplan" src="sodra_strand.jpg" alt="Södra Strand">
+                        <figcaption>Södra strand.<br>En exotisk oas mitt i centrum!</figcaption>
+                    </figure>
+                </div>
+                <div id="vinterText">Åk hundspann från Luleås centrum rakt ut i ett spännande skärgårdsäventyr.
                     Eller följ med på skotersafari i det arktiska snölandskapet.
                     Eller varför inte vinterbada efter ett ångande hett bastubad.
                     Eller ta bilen ut på milslånga isvägar och ät middag i en lappkåta mitt ute på isen.
@@ -149,7 +108,11 @@
                     och ut till de så kallade pack-is vallarna som kan bli upp mot 15 meter höga.
                     Klättra upp och njut av utsikten
                     och det arktiska klimatet! Har du tur kanske du ser sälar.
-                </p>
+                <figure id="figure2" class="hide">
+                    <img id="huskytransport" src="huskytransport.jpg" alt="Huskytransport">
+                    <figcaption>Hundspannsåkning!<br>Från centrum till äventyr i skärgården!</figcaption>
+                </figure>
+            </div>
             </div>
             <div id="footer"><p>Av Maximilan Sundberg &amp; Håkan Arnoldson</p></div>
         </div>
